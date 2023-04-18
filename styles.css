@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #9b59b6;
+}
+
+.container {
+  background-color: white;
+  width: 400px;
+  max-width: 85%;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 10%);
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container .header {
+  background-color: #f8f6f8;
+  padding: 20px;
+  border-bottom: 1px solid #ecebec;
+  text-align: center;
+  font-family: inherit;
+}
+.container .form {
+  padding: 25px 25px 35px 25px;
+  font-family: inherit;
+}
+
+.container .form .form-control {
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.container .form .form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 14px;
+}
+.container .form .form-control input {
+  display: block;
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  border: 2px solid #ecebec;
+  font-family: inherit;
+  caret-color: #8c07c0;
+}
+.container .form .form-control input::placeholder {
+  transition: 150ms ease-in-out;
+}
+.container .form .form-control input:focus::placeholder {
+  opacity: 0;
+}
+
+.container .form .form-control i {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  visibility: hidden;
+}
+.container .form .form-control small {
+  color: #e74c3c;
+  font-size: 14px;
+  visibility: hidden;
+}
+.Submit {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  background-color: #704489;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  border: #f8f6f8;
+  outline: none;
+  transition: 150ms;
+  cursor: pointer;
+}
+.Submit:hover {
+  background-color: #9b59b6;
+}
+
+.form-control.success .fa-solid.fa-circle-check {
+  visibility: visible;
+  color: #2ecc71;
+}
+
+.container .form .form-control.success input {
+  border-color: #2ecc71;
+}
+.form-control.error .fa-solid.fa-circle-exclamation {
+  visibility: visible;
+  color: #e74c3c;
+}
+.container .form .form-control.error input {
+  border-color: #e74c3c;
+}
+.container .form .form-control.error small {
+  visibility: visible;
+}
+
+.container .validation {
+  background-color: #51bb7d;
+  width: 100%;
+  margin-top: 5px;
+  padding: 12px;
+  color: whitesmoke;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 3px;
+  display: none;
+}

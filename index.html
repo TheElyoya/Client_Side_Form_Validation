@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Side Form Validation</title>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/2f839c1409.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="imgs/checklist.png" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;700&family=Climate+Crisis&family=Jomhuria&family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto+Mono&family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@200;300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- script file -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Create Account</h2>
+      </div>
+      <form method="post" class="form" id="form">
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="theElyoya" />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input id="email" placeholder="Youremail@gmail.com" />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="pass">Password</label>
+          <input
+            type="password"
+            id="pass"
+            placeholder="Password must contain six chars at least"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="pass-confirm">Password Confirmation</label>
+          <input
+            type="password"
+            id="pass-confirm"
+            placeholder="Repeat Password"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Error message</small>
+        </div>
+        <button type="submit" class="Submit">Submit</button>
+        <div class="validation">
+          <small>Sending Form ...</small>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
